@@ -21,9 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # User management
-    path('accounts/',include('django.contrib.auth.urls')),
+    # path('accounts/',include('django.contrib.auth.urls')), #default django auth url
+    path('accounts/',include('allauth.urls')),
     
     # Local apps
-    path('accounts/',include('users.urls')),
+    # path('accounts/',include('users.urls')), #no loger being used
     path('',include('pages.urls')),
 ]
