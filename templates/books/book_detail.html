@@ -5,7 +5,17 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{object.title}}</h1>
-<p>Author: {{object.title}}</p>
-<p>Price: {{object.price}}$</p>
+<div>
+    <h2><a href="">{{object.title}}</a></h2>
+    <p>Author: {{object.author}}</p>
+    <p>Price: {{object.price}}$</p>
+    <div>
+        <h3>Reviews</h3>
+        <ul>
+            {% for review in object.reviews.all %}
+            <li>{{ review.review }} ({{review.author}})</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 {% endblock %}
