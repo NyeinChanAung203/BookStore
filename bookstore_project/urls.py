@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     # Django admin
-    path('admin/', admin.site.urls),
+    path('invisible-admin/', admin.site.urls),
     
     # User management
     # path('accounts/',include('django.contrib.auth.urls')), #default django auth url
