@@ -8,8 +8,8 @@ services:
         - ENVIRONMENT=production
         - SECRET_KEY=^szd@fanq0nm$linc(8#un47%m!j_^35$$mpp#5pi(ew3)kxhz2000126
         - DEBUG=0
-        - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51JsRqqF1nxxKHdsv2NOGal3NI7rHX2iQN5GXhkX9TwXugoClRRHNkGRvUvexIyKC7hCm66mbG8nFct0ufNYYihIH00Q9v62RJi
-        - STRIPE_TEST_SECRET_KEY=sk_test_51JsRqqF1nxxKHdsvbo9zNKZHlAdn9NkPLA1VAQn6L7cnGGRFymUNFnZHVTzNCES8W9n2zMDFVJlgOwgGc1bpggti00VuwucTn6
+        - STRIPE_TEST_PUBLISHABLE_KEY=<publish_key>
+        - STRIPE_TEST_SECRET_KEY=<secret_key>
       ports:
         - 8000:8000
       depends_on:
