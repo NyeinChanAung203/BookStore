@@ -5,7 +5,7 @@
 {% if not perms.books.special_status %}
 <a href="{% url 'orders' %}" class="btn btn-success my-3">Purchase all Books</a>
 {% endif %}
-{% for book in book_list %}
+{% for book in object_list %}
     <div class="p-3">
         <h2><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h2>
     </div>
